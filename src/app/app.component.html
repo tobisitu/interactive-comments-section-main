@@ -1,5 +1,6 @@
 <div class="wrapper">
   <div class="container">
+    <p>HELP LOL</p>
     <div class="comments " *ngFor="let comment of comments">
       <comment commentID="{{comment.id}}" userName= "{{comment.user.username}}" user="{{comment.user.image.png}}" createdAt="{{comment.createdAt}}" content="{{comment.content}}" [score]="comment.score"> </comment>
       <div class="replies mt-3">
