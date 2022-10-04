@@ -1,0 +1,21 @@
+.wrapper{
+    font-size: 16px !important;
+    font-family: 'Rubik', sans-serif;
+    background-color:hsl(223, 19%, 93%) !important;
+    padding: 1rem;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.replies{
+    border-left: 2px solid hsl(223, 10%, 86%);
+    padding-left: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .replies{
+        padding-left: 2rem;
+        margin-left: 2rem;
+    }
+    
+  }

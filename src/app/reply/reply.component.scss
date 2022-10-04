@@ -1,0 +1,164 @@
+
+.reply-container{
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.user-avatar {
+    width: 2rem;
+    height: 100%;
+}
+
+.user{
+    font-weight: 500;
+}
+
+.current-user{
+    font-weight: 500;
+    background-color:hsl(238, 40%, 52%);
+    color: white;
+    padding: 0 0.25rem;
+    font-size: 0.7rem;
+}
+
+.replyingTo{
+    font-weight: 500;
+    color: hsl(238, 40%, 52%);
+}
+.created, .content, .replyInput {
+    color: hsl(211, 10%, 45%) !important;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.score-btn-group, .score-btn-group-left {
+    button{
+        color: hsl(238, 40%, 52%);
+        background-color: hsl(223, 19%, 93%);
+        border: transparent;
+        font-weight: 500;
+    }
+    .score-adjust{
+        opacity: 0.8;
+    }
+}
+.leftButtons {
+    display: none;
+}
+
+.reply, .edit{
+    color: hsl(238, 40%, 52%);
+    font-weight: 500;
+    &:hover, &:active {
+        opacity: 0.7;
+        color: hsl(238, 40%, 52%);
+    }
+}
+
+.edit,.delete, .update {
+    font-size: 0.8rem;
+}
+
+.delete{
+    color: hsl(358, 79%, 66%);
+    font-weight: 500;
+    &:hover, &:active {
+        opacity: 0.7;
+        color: hsl(358, 79%, 66%);
+    }
+}
+
+:disabled {
+    border: none;
+}
+
+.score-btn-group-left{
+    display: none;
+}
+.update{
+    display: none;
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    font-weight: 500;
+    text-transform:uppercase ;
+    // padding: 0.5rem 1.5rem;
+    &:hover, &:active {
+        opacity: 0.7;
+        background-color: hsl(238, 40%, 52%);
+        color: white;
+    }
+}
+
+
+div *[contenteditable="true"] {
+    padding: 1rem;
+    border: 1px solid hsl(238, 40%, 52%);
+    border-radius: 5px;
+}
+
+.delete-comment-btn {
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 600px){
+    .leftButtons{
+        display: inline;
+        margin-left: auto;
+    }
+
+    .rightButtons  {
+        .btn.delete, .btn.edit{
+            display: none;
+        }
+    }
+    .reply-container{
+        display: flex;
+    }
+
+    .footer{
+        display: none;
+    }
+    
+    .score-btn-group-left {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+        height: 0.5rem;
+    }
+
+    .update{
+        display: flex;
+        float: right;
+    }
+
+    .btn-group{
+        .btn-top{
+            margin-left: -1px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .btn-bottom{
+            margin-left: -1px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+}
